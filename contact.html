@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Saurabh Kumar Gupta</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Saurabh Kumar Gupta</h1>
+      <ul class="flex space-x-6 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="research.html" class="hover:text-blue-600">Research</a></li>
+        <li><a href="publications.html" class="hover:text-blue-600">Publications</a></li>
+        <li><a href="cv.html" class="hover:text-blue-600">CV</a></li>
+        <li><a href="contact.html" class="text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="max-w-3xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+    <p class="text-gray-700 text-center mb-10">Feel free to reach out via email or use the form below to send a message.</p>
+
+    <form action="https://formspree.io/f/mnqewgkd" method="POST" class="bg-white p-8 rounded-xl shadow space-y-6">
+      <div>
+        <label for="name" class="block font-medium text-sm">Name</label>
+        <input type="text" name="name" id="name" required class="w-full mt-1 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="email" class="block font-medium text-sm">Email</label>
+        <input type="email" name="email" id="email" required class="w-full mt-1 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="message" class="block font-medium text-sm">Message</label>
+        <textarea name="message" id="message" rows="5" required class="w-full mt-1 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition">Send Message</button>
+    </form>
+
+    <div class="mt-10 text-center">
+      <p class="text-sm">Email: <a href="mailto:saurabh194.gpt@gmail.com" class="text-blue-600">saurabh194.gpt@gmail.com</a></p>
+      <div class="mt-4 space-x-4 text-xl">
+        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-researchgate"></i></a>
+        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-8 mt-16">
+    <div class="text-center">
+      <p class="text-sm">&copy; 2025 Saurabh Kumar Gupta. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

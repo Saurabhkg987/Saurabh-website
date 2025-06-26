@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Saurabh Kumar Gupta</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Saurabh Kumar Gupta</h1>
+      <ul class="flex space-x-6 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="research.html" class="hover:text-blue-600">Research</a></li>
+        <li><a href="publications.html" class="text-blue-600">Publications</a></li>
+        <li><a href="cv.html" class="hover:text-blue-600">CV</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6">Selected Publications</h2>
+
+    <div class="space-y-6">
+      <!-- Journal Publications -->
+      <div>
+        <h3 class="text-2xl font-semibold cursor-pointer text-blue-700" onclick="toggleSection('journals')">Journal Publications</h3>
+        <ul id="journals" class="mt-2 space-y-2">
+          <li>S.K. Gupta et al., "Application of 3D printing for customised treatment of upper limb disorders," <em>J. Hand Microsurg.</em>, 2025.</li>
+          <li>S.K. Gupta et al., "Enhanced Fracture toughness of Additively Manufactured Ti-6Al-4V ELI," <em>Int J Fract</em>, 2025 (In press).</li>
+          <li>S.K. Gupta et al., "Additive manufacturing of Ti–Nb–Ta–Zr alloy by DED," <em>Bioprinting</em>, 2024.</li>
+        </ul>
+      </div>
+
+      <!-- Conference Publications -->
+      <div>
+        <h3 class="text-2xl font-semibold cursor-pointer text-blue-700" onclick="toggleSection('conferences')">Conference Publications</h3>
+        <ul id="conferences" class="mt-2 space-y-2 hidden">
+          <li>S.K. Gupta et al., "Enhanced biomechanical performance of Ti-6Al-4V bone plates," <em>Ti-2023</em>, Edinburgh, UK.</li>
+          <li>S.K. Gupta et al., "Fracture Toughness of Selectively Laser Melted Ti-6Al-4V ELI," <em>ICOTOM 2024</em>, France.</li>
+        </ul>
+      </div>
+
+      <!-- Manuscripts -->
+      <div>
+        <h3 class="text-2xl font-semibold cursor-pointer text-blue-700" onclick="toggleSection('manuscripts')">Manuscripts Under Review</h3>
+        <ul id="manuscripts" class="mt-2 space-y-2 hidden">
+          <li>S.K. Gupta et al., "Augmenting Tribocorrosion Performance of AM Ti-6Al-4V," under review in <em>Tribology International</em>.</li>
+          <li>S.K. Gupta et al., "Effects of Aging on Co-Cr-Mo alloy," manuscript ready for submission.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-8 mt-16">
+    <div class="text-center">
+      <p class="text-sm">&copy; 2025 Saurabh Kumar Gupta. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
