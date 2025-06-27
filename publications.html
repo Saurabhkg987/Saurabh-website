@@ -117,13 +117,13 @@
 
     <!-- Manuscripts Under Review/Preparation   -->
     <h2 class="text-3xl font-bold mb-6">Manuscripts Under Review / Preparation</h2>
-    <ul class="list-disc ml-6 space-y-2">
+    <ol class="list-decimal ml-6 space-y-2">
       <li><strong><u>Saurabh Kumar Gupta</u></strong>, Satyam Suwas, Kaushik Chatterjee.  
       "Augmenting Tribocorrosion Performance of AM Ti-6Al-4V" (under review in <em>Tribology International</em>).</li>
       
       <li><strong><u>Saurabh Kumar Gupta</u></strong>, Navaneeth Holla, Satyam Suwas, Kaushik Chatterjee.  
       "Effects of Isothermal Aging on Microstructure and Wear of AM Co-Cr-Mo Alloy" (Manuscript ready for submission).</li>
-    </ul>
+    </ol>
   </section>
 
   <footer class="bg-gray-100 py-8 mt-16">
@@ -131,19 +131,24 @@
       <p class="text-sm">&copy; 2025 Saurabh Kumar Gupta. All rights reserved.</p>
     </div>
   </footer>
-  <script>
+<script>
   window.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
+    const sectionTitles = ["Journal Publications", "Conference Publications", "Manuscripts Under Review / Preparation"];
 
-    sections.forEach(section => {
-      let count = 1;
-      const ols = section.querySelectorAll('ol');
-
-      ols.forEach(ol => {
-        ol.start = count;
-        const items = ol.querySelectorAll('li');
-        count += items.length;
-      });
+    sectionTitles.forEach(titleText => {
+      const header = [...document.querySelectorAll("h2")].find(h2 => h2.textContent.trim() === titleText);
+      if (header) {
+        let count = 1;
+        let next = header.nextElementSibling;
+        while (next && (next.tagName !== "H2")) {
+          if (next.tagName === "OL") {
+            next.start = count;
+            const items = next.querySelectorAll('li');
+            count += items.length;
+          }
+          next = next.nextElementSibling;
+        }
+      }
     });
   });
 </script>
