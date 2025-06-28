@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research Interests | Saurabh Kumar Gupta</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .scroll-gallery {
+      display: flex;
+      gap: 1.5rem;
+      overflow: hidden;
+      animation: scroll 25s linear infinite;
+    }
+
+    .scroll-gallery img {
+      flex-shrink: 0;
+      height: 180px;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .gallery-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <nav class="bg-white shadow-md sticky top-0 z-50">
@@ -21,39 +46,65 @@
     </div>
   </nav>
 
+  <!-- 🔁 Research Highlights Gallery -->
+  <section class="bg-white py-10 border-b">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">Research Highlights</h2>
+      <div class="gallery-wrapper">
+        <div class="scroll-gallery">
+          <img src="images/highlight1.jpg" alt="Highlight 1">
+          <img src="images/highlight2.jpg" alt="Highlight 2">
+          <img src="images/highlight3.jpg" alt="Highlight 3">
+          <img src="images/highlight4.jpg" alt="Highlight 4">
+          <img src="images/highlight5.jpg" alt="Highlight 5">
+          <!-- 🔄 Add more images as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="max-w-6xl mx-auto py-16 px-4">
     <h2 class="text-3xl font-bold mb-10">Research Themes</h2>
 
     <div class="grid md:grid-cols-2 gap-8">
+
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Additive Manufacturing</h3>
         <p class="text-gray-700">Laser Powder Bed Fusion and Directed Energy Deposition techniques for fabricating biomedical and aerospace-grade titanium alloys.</p>
+        <!-- 🖼️ Insert plot/image here -->
+        <!-- <img src="images/am_plot1.png" alt="AM research" class="mt-4 rounded-lg shadow w-full"> -->
       </div>
 
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Titanium Alloys</h3>
         <p class="text-gray-700">Development of Ti-6Al-4V and Ti–35Nb–5Ta–7Zr alloys for enhanced mechanical and biological performance in orthopedic applications.</p>
+        <!-- 🖼️ Insert plot/image here -->
       </div>
 
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Tribocorrosion</h3>
         <p class="text-gray-700">Investigating wear and corrosion synergy in physiological conditions for improved implant durability.</p>
+        <!-- 🖼️ Insert plot/image here -->
       </div>
 
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Microstructure & Crystallographic Texture</h3>
         <p class="text-gray-700">Using EBSD, TEM, and ECCI to study deformation mechanisms and texture evolution during processing.</p>
+        <!-- 🖼️ Insert EBSD maps, grain orientation plots etc. -->
       </div>
 
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Orthopedic Implants</h3>
         <p class="text-gray-700">High-temperature mechanical behavior studies to assess the long-term performance of titanium alloys in aerospace applications.</p>
+        <!-- 🖼️ Insert mechanical performance plots -->
       </div>
 
       <div class="bg-white rounded-xl shadow p-6">
         <h3 class="text-xl font-semibold mb-2">Plastic Deformation</h3>
         <p class="text-gray-700">Real-world validation of 3D-printed implants for upper-limb deformities through translational research and clinical application.</p>
+        <!-- 🖼️ Insert load–displacement curves or clinical image -->
       </div>
+
     </div>
   </section>
 
